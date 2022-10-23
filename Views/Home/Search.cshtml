@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@model IEnumerable<producto>
+@{
+    ViewData["Title"] = "Buscar";
+}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+@foreach (producto item in Model)
+    {   
+    if(@item.tmpnombre != null){
+      <div class="container my-1 py-1 z-depth-1">
+
+
+  <!--Section: Content-->
+  <section class="text-center">
+
+    <!-- Section heading -->
+    <h2 class="font-weight-bold mb-5">Detalles del Producto</h2>
+
+    <div class="row">
+
+      <div class="col-lg-6">
+
+        <!--Carousel Wrapper-->
+        <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+
+          <!--Slides-->
+          <div class="carousel-inner text-center text-md-left" role="listbox">
+            <div class="carousel-item active">
+              <img src=@item.tmpimagen
+                alt="First slide" class="img-fluid">
+            </div>
+          </div>
+          <!--/.Slides-->
+
+          <!--Thumbnails-->
+          <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <!--/.Thumbnails-->
+
+        </div>
+        <!--/.Carousel Wrapper-->
+
+      </div>
+
+      <div class="col-lg-5 text-center text-md-left">
+
+        <h1>
+          <strong>@item.tmpnombre</strong>
+        </h1>
+        <span class="badge badge-danger product mb-1 ml-xl-0 ml-1">Más vendido</span>
+        <h1 >
+          <span >
+            <strong>$@item.tmpprecio</strong>
+          </span>
+        </h1>
+
+        <!--Accordion wrapper-->
+        <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+          <!-- Accordion card -->
+          <div class="card">
+
+            <!-- Card header -->
+            <div class="card-header" role="tab" id="headingOne1">
+              <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+                aria-controls="collapseOne1">
+                <h5 class="mb-0" style="color: #000000;">
+                  Descripción
+                  <i class="fas fa-angle-down rotate-icon"></i>
+                </h5>
+              </a>
+            </div>
+
+            <!-- Card body -->
+            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+              data-parent="#accordionEx">
+              <div class="card-body">
+                Talla: @item.tmptalla
+                <br>
+                Color: @item.tmpcolor
+                <br>
+                Unidades Disponibles:@item.tmpunidades
+              </div>
+            </div>
+          </div>
+          <!-- Accordion card -->
+
+          <!-- Accordion card -->
+          <div class="card">
+
+            <!-- Card header -->
+            <div class="card-header" role="tab" id="headingTwo2">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+                aria-expanded="false" aria-controls="collapseTwo2">
+                <h5 class="mb-0" style="color: #000000;">
+                  Políticas de envío
+                  <i class="fas fa-angle-down rotate-icon"></i>
+                </h5>
+              </a>
+            </div>
+
+            <!-- Card body -->
+            <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+              data-parent="#accordionEx">
+              <div class="card-body">
+                El tiempo de entrega empezará a contar a partir de la confirmación exitosa del pago, que recibirás en el correo electrónico con el cual realizaste tu compra.
+              </div>
+            </div>
+          </div>
+          <!-- Accordion card -->
+
+          <!-- Accordion card -->
+          <div class="card">
+
+            <!-- Card header -->
+            <div class="card-header" role="tab" id="headingThree3">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+                aria-expanded="false" aria-controls="collapseThree3">
+                <h5 class="mb-0" style="color: #000000;">
+                  Cuidados
+                  <i class="fas fa-angle-down rotate-icon"></i>
+                </h5>
+              </a>
+            </div>
+
+            <!-- Card body -->
+            <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+              data-parent="#accordionEx">
+              <div class="card-body">
+                - No secar en maquina
+                <br>
+                - No usar blanqueador, ni detergentes.
+              </div>
+            </div>
+          </div>
+          <!-- Accordion card -->
+
+        </div>
+        <!--/.Accordion wrapper-->
+         <div class="row mt-3">
+              <div class="col-md-12 text-center text-md-left text-md-right">
+                <button class="btn btn-dark btn-rounded">
+                  <i class="fas fa-cart-plus mr-2" aria-hidden="true"></i> Añadir al carrito</button>
+              </div>
+            </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!--Section: Content-->
+
+</div>
+    }else{
+      <h2 class="font-weight-bold display-4">No se ha encontrado ningun producto con el nombre que ingresaste :,(</h2>
+    }
+}
+
+
+<!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>

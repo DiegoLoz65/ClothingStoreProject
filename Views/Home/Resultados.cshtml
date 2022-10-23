@@ -1,0 +1,26 @@
+@model IEnumerable<float>
+@{
+    ViewData["Title"] = "Resultados";
+}
+<h2 class="font-weight-bold display-4">RESULTADOS</h2>
+
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ORDENADO</th>
+      <th scope="col">RANDOM</th>
+      <th scope="col">IGUALES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+@foreach (float item in Model)
+    {   
+        if(@item != 0){
+            <td>@item ms</td>
+        }
+    }
+    </tr>
+  </tbody>
+</table>

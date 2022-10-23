@@ -1,0 +1,14 @@
+@model IEnumerable<producto>
+@{
+    ViewData["Title"] = "MergeSort";
+}
+<h1 class="display-4">MERGESORT</h1>
+
+@foreach (producto item in Model)
+    {   
+            <td>@item.tmpnombre</td>
+            <td>@item.tmpprecio</td>
+            <td>@item.tmpcolor</td>
+            <td>@item.tmptalla</td>
+            <td>@item.tmpunidades</td>
+    }

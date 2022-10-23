@@ -1,0 +1,24 @@
+@model IEnumerable<string>
+@{
+    ViewData["Title"] = "Vector Ordenado";
+}
+<h2 class="font-weight-bold display-4">VECTOR RANDOM</h2>
+
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Palabras generadas aleatoriamente</th>
+    </tr>
+  </thead>
+  <tbody>
+
+@foreach (string item in Model)
+    {   
+    <tr>
+      <td>@item</td>
+    </tr>
+    }
+
+  </tbody>
+</table>

@@ -1,0 +1,50 @@
+@{
+    ViewData["Title"] = "Equeue";
+}
+ 
+<h2>Para añadir un nuevo producto ingrese los siguientes datos</h2>
+<!-- Extended default form grid -->
+<form method="post">
+<!-- Default input -->
+  <div class="form-group">
+    <label for="inputNombre">Nombre</label>
+    <input type="text" name="pNombre" class="form-control" id="txtNombre" placeholder="Ingrese el nombre del producto">
+  </div>
+
+  <!-- Grid row -->
+  <div class="form-row">
+    <!-- Default input -->
+    <div class="form-group col-md-6">
+      <label for="inputPrecio">Precio</label>
+      <input type="text" name="pPrecio" class="form-control" id="txtPrecio" placeholder="$">
+    </div>
+    <!-- Default input -->
+    <div class="form-group col-md-6">
+      <label for="inputColor">Color</label>
+      <input type="text" name="pColor" class="form-control" id="txtColor" placeholder="Ingrese el color del producto">
+    </div>
+  </div>
+  <!-- Grid row -->
+
+  <!-- Grid row -->
+  <div class="form-row">
+    <!-- Default input -->
+    <div class="form-group col-md-6">
+      <label for="inputTalla">Talla</label>
+      <input type="text" name="pTalla" class="form-control" id="txtTalla" placeholder="Ingrese la talla del producto">
+    </div>
+    <!-- Default input -->
+    <div class="form-group col-md-6">
+      <label for="inputUnidadesDisponibles">Unidades Disponibles</label>
+      <input type="text" class="form-control" name="pUnidades" id="txtUnidades" placeholder="Ingrese las unidades disponibles">
+    </div>
+  </div>
+  <!-- Grid row -->
+  <!-- Default input IMAGEN-->
+  <div class="form-group">
+    <label for="inputImagen">Imagen</label>
+    <input type="text" name="pImagen" class="form-control" id="txtImagen" placeholder="Ingrese el link de la imagen">
+  </div>
+  <button type="submit" class="btn btn-primary btn-md">ENVIAR INFORMACIÓN</button>
+</form>
+<!-- Extended default form grid -->

@@ -1,0 +1,232 @@
+@{
+    ViewData["Title"] = "Carrito";
+}
+<h2 class="font-weight-bold display-4" style="position: absolute; left: 955px; top: 245px; padding: 1em;">CARRITO DE COMPRAS</h2>
+<div style="position: absolute; left: 260px; top: 300px; padding: 1em;"><img src="https://i.ibb.co/3mXhMq2/Imagen3.jpg" BORDER=2 class="rounded z-depth-1"></div>
+<div style="position: absolute; left: 260px; top: 1300px; padding: 1em;"><img src="https://i.ibb.co/WDCh2c1/Imagen2.jpg" BORDER=2 class="rounded z-depth-1"></div>
+<div style="position: absolute; left: 1050px; top: 1800px; padding: 1em;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Logo_U.T.P.png/320px-Logo_U.T.P.png" class="rounded z-depth-1"></div>
+<div style="position: absolute; left: 1060px; top: 1550px; padding: 1em;"><img src="https://i.ibb.co/KLVfbc2/LOGO-SECUNDARIO-REDUCIDO.png" class="rounded z-depth-1"></div>
+<div style="position: absolute; left: 960px; top: 2070px; padding: 1em;"><img src="https://i.ibb.co/5TzvDzm/pago-seguro-1.png" class="rounded z-depth-1"></div>
+
+<!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+<!--Card content-->
+                <form style="position: absolute; left: 1000px; top: 380px; padding: 1em;">
+
+                  <!--Grid row-->
+                  <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+
+                      <!--firstName-->
+                      <label for="firstName" class="">Nombres</label>
+                      <input type="text" id="firstName" class="form-control">
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-2">
+
+                      <!--lastName-->
+                      <label for="lastName" class="">Apellidos</label>
+                      <input type="text" id="lastName" class="form-control">
+
+                    </div>
+                    <!--Grid column-->
+
+                  </div>
+                  <!--Grid row-->
+
+                  <!--email-->
+                  <label for="email" class="">Correo electrónico</label>
+                  <input type="text" id="email" class="form-control mb-4" placeholder="tucorreo@ejemplo.com">
+
+                  <!--address-->
+                  <label for="address" class="">Dirección</label>
+                  <input type="text" id="address" class="form-control mb-4" placeholder="Calle # Barrio:">
+
+                  <!--address-2-->
+                  <label for="address-2" class="">Dirección 2 (opcional)</label>
+                  <input type="text" id="address-2" class="form-control mb-4" placeholder="Apartamento o Bloque">
+
+                  <!--Grid row-->
+                  <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4">
+
+                      <label for="country">Departamento</label>
+                      <select class="custom-select d-block w-100" id="country" required>
+                        <option value="">Seleccionar...</option>
+                        <option>Amazonas</option>
+                        <option>Antioquía</option>
+                        <option>Arauca</option>
+                        <option>Atlántico</option>
+                        <option>Bolívar</option>
+                        <option>Boyacá</option>
+                        <option>Caldas</option>
+                        <option>Caquetá</option>
+                        <option>Casanare</option>
+                        <option>Cauca</option>
+                        <option>Cesar</option>
+                        <option>Chocó</option>
+                        <option>Córdoba</option>
+                        <option>Cundinamarca</option>
+                        <option>Guainía</option>
+                        <option>Guaviare</option>
+                        <option>Huila</option>
+                        <option>La Guajira</option>
+                        <option>Magdalena</option>
+                        <option>Meta</option>
+                        <option>Nariño</option>
+                        <option>Norte de Santander</option>
+                        <option>Putumayo</option>
+                        <option>Quindío</option>
+                        <option>Risaralda</option>
+                        <option>San Andrés y Providencia</option>
+                        <option>Santander</option>
+                        <option>Sucre</option>
+                        <option>Tolima</option>
+                        <option>Valle del Cauca</option>
+                        <option>Vaupés</option>
+                        <option>Vichada</option>
+
+                      </select>
+                      <div class="invalid-feedback">
+                        Por favor, seleccione un departamento correcto.
+                      </div>
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+
+                      <label for="state">Ciudad</label>
+                      <select class="custom-select d-block w-100" id="state" required>
+                        <option value="">Seleccionar...</option>
+                        <option>Ibagué</option>
+                        <option>Pereira</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Por favor, seleccione una ciudad correcta.
+                      </div>
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+
+                      <label for="zip">Código Postal</label>
+                      <input type="text" class="form-control" id="zip" placeholder="" required>
+                      <div class="invalid-feedback">
+                        Código Postal Requerido
+                      </div>
+
+                    </div>
+                    <!--Grid column-->
+
+                  </div>
+                  <!--Grid row-->
+
+                  <hr>
+
+                  <div class="mb-1">
+                    <input type="checkbox" class="form-check-input filled-in" id="chekboxRules">
+                    <label class="form-check-label" for="chekboxRules">Acepto los términos y condiciones.</label>
+                  </div>
+                  <div class="mb-1">
+                    <input type="checkbox" class="form-check-input filled-in" id="safeTheInfo">
+                    <label class="form-check-label" for="safeTheInfo">Guardar información para la próxima vez.</label>
+                  </div>
+                  <div class="mb-1">
+                    <input type="checkbox" class="form-check-input filled-in" id="subscribeNewsletter">
+                    <label class="form-check-label" for="subscribeNewsletter">Suscribirse y recibir promociones.</label>
+                  </div>
+
+                  <hr>
+
+                  <button class="btn btn-dark btn-lg btn-block" type="submit">Guardar</button>
+          
+                </form>
+
+                
+                <form style="position: absolute; left: 1000px; top: 1080px; padding: 1em;">
+                  <!--Panel 3-->
+              
+
+                <div class="d-block my-3">
+                  <div class="mb-2">
+                    <input name="group2" type="radio" class="form-check-input with-gap" id="radioWithGap4" checked
+                      required>
+                    <label class="form-check-label" for="radioWithGap4">Tarjeta de crédito</label>
+                    <i class="far fa-credit-card"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-visa"></i>
+                  </div>
+                  <div class="mb-2">
+                    <input iname="group2" type="radio" class="form-check-input with-gap" id="radioWithGap5"
+                      required>
+                    <label class="form-check-label" for="radioWithGap5">Tarjeta de débito</label>
+                    <i class="far fa-credit-card"></i>
+                  </div>
+                  <div class="mb-2">
+                    <input name="group2" type="radio" class="form-check-input with-gap" id="radioWithGap6" required>
+                    <label class="form-check-label" for="radioWithGap6">Paypal</label>
+                    <i class="fab fa-paypal"></i>
+                    
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="cc-name123">Nombre de titular</label>
+                    <input type="text" class="form-control" id="cc-name123" placeholder="" required>
+                    <small class="text-muted">Nombre completo impreso en la tarjeta</small>
+                    <div class="invalid-feedback">
+                      El nombre en la tarjeta es necesario.
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="cc-number123">Número de tarjeta de crédito</label>
+                    <input type="text" class="form-control" id="cc-number123" placeholder="" required>
+                    <div class="invalid-feedback">
+                      El número de la tarjeta se requerido
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3 mb-3">
+                    <label for="cc-expiration123">Vencimiento</label>
+                    <input type="text" class="form-control" id="cc-expiration123" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Fecha de vencimiento requerida
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="cc-cvv123">CVV</label>
+                    <input type="text" class="form-control" id="cc-cvv123" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Código de seguridad requerido
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+
+                <button class="btn btn-dark btn-lg btn-block" type="submit">COMPRAR</button>
+              <!--/.Panel 3-->
+                </form>     
+
+
+
+
