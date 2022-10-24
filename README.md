@@ -35,7 +35,7 @@ To install, follow these steps:
 git clone https://github.com/DiegoLoz65/ClothingStoreProject
 ```
 
-## ☕ Using Project_Name
+## ☕ Using Clothing Store
 
 #### Run this command in your CMD at the source path: 
 ```
