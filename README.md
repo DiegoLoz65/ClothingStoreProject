@@ -47,4 +47,6 @@ Test and enjoy! 😅
 
 Instagram:  [@diegolozano_05](https://www.instagram.com/diegolozano_05/) 
 Linkedin:  https://www.linkedin.com/in/diegolozanom/
-
+Resources: 
+* Bootstrap
+* Mattelsa (Images)
