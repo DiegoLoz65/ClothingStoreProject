@@ -32,7 +32,7 @@ To install, follow these steps:
 
 * Clone the project:
 ```
-git clone https://github.com/DiegoLoz65/ClothingStoreProject
+git clone https://github.com/DiegoLoz65/clothing-store-project-UTP
 ```
 
 ## ☕ Using Clothing Store
